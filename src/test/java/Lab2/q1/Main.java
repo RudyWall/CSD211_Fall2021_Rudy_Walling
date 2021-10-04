@@ -1,3 +1,14 @@
+/**
+ * Author: Rudy Walling
+ * Date: October 4, 2021
+ * Description: First the program declares and 
+ * initialize the  9 primitive variables, print 
+ * them, and then in the second part, prompts 
+ * the user for new values and then print them 
+ * to the console
+ */
+
+
 package Lab2.q1;
 
 import java.util.Scanner;
