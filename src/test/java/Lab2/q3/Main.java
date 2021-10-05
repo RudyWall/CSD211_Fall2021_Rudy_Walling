@@ -6,16 +6,15 @@
  * displays the result to the console.
 
  */
-package Lab2.q2;
+package Lab2.q3;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the tempurture in Celsius: ");         
-        double celsius = input.nextDouble();
-        double fahrenheit =(celsius * 9.0/5) + 32;
-        System.out.println(celsius + " degrees Celsius = " + fahrenheit + " degrees Fahrenheit"); 
+        System.out.println("Enter the tempurture in fahrenheit: ");         
+        double fahrenheit = input.nextDouble();
+        double celsius = (fahrenheit - 32) * 5 / 9.0;
+        System.out.println(fahrenheit + " degrees fahrenheit = " + celsius + " degrees celsius"); 
     }
 }
-
