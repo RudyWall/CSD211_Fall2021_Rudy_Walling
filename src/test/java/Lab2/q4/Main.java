@@ -1,15 +1,13 @@
-/*
+/**
  * Author: Rudy Walling
- * Date: October 6, 2021
+ * Date: October 4, 2021
  * Description: Computes the volume
  * of a cylinder inputted by the users
- * radius and length from the GUI. 
+ * radius and length.
  */
-package Lab2.q6;
+package Lab2.q4;
 
 import java.util.Scanner;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author rudyw
@@ -17,8 +15,10 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		double radius=Integer.parseInt(JOptionPane.showInputDialog(null,"Enter the Radius: "));
-                double length=Integer.parseInt(JOptionPane.showInputDialog(null,"Enter the Length: "));
+		System.out.println("Enter the radius of cylinder: ");
+		double radius = input.nextDouble();
+                System.out.println("Now Enter the length of the cylinder");
+		double length = input.nextDouble();
 		double area = radius * radius * 3.141592659;
 		double volume = area * length;
 		System.out.println("The cylinder of radius " + radius + " and length of " + length + " has a volume of " + volume);
