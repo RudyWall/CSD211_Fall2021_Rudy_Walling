@@ -136,8 +136,8 @@ public class App {
         int carnumber = Integer.parseInt(input.nextLine());
         cars[carnumber] = null;
         currentIndex -= 1;
-        for (int i = carnumber; i < cars.length; i++) {
-            cars[i] = cars[i];
+        for (int i = carnumber+1; i < cars.length; i++) {
+            cars[i-1] = cars[i];
         }
     }
 
