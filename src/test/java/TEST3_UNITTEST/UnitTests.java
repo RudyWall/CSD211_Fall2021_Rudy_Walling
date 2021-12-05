@@ -23,7 +23,7 @@ public class UnitTests {
     @Before
     public void SetUp(){
         course1 = new Course("Java", "csd211", "September 21, 2021", 9, 10);
-        course2 = course1;
+        course2 = new Course("Java", "csd211", "September 21, 2021", 9, 10);
         course3 = new Course("Mobile apps", "csd203", "September 19, 2021", 8, 11);
     }
     @After
@@ -34,6 +34,7 @@ public class UnitTests {
     }
     @Test
     public void test_1(){
+        
         assertEquals("Course doesn't match", course1, course2);
     }
     @Test

@@ -13,9 +13,8 @@ import java.util.ArrayList;
  * @author rudyw
  */
 public class App {
-    private final int numCars = 100;
-    private List<Car> cars = new ArrayList<Car>();
-    private List<Car> sold = new ArrayList<Car>();
+    private ArrayList<Car> cars = new ArrayList<Car>();
+    private ArrayList<Car> sold = new ArrayList<Car>();
     private int currentIndex = 0;
     private int soldCurrentIndex = 0;
     private Scanner input = new Scanner(System.in);
@@ -31,12 +30,6 @@ public class App {
             + "1. List Cars\n"
             + "99. quit";
     public void run(){
-        for (int i=0;i < cars.size();i++){
-            cars.set(i,null);
-        }
-        for (int i=0;i < sold.size();i++){
-            sold.set(i,null);
-        }
         boolean done = false;
         while(!done){
         System.out.println(menu);

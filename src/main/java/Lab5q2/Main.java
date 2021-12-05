@@ -5,12 +5,15 @@
  */
 package Lab5q2;
 
+import java.io.IOException;
+
 /**
  *
  * @author rudyw
  */
 public class Main {
-    public static void main(String[] args){
-       new App().run();
+
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        new App().run();
     }
 }
